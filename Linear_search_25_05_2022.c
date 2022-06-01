@@ -4,6 +4,7 @@
 int lin_search(int arr[],int key,int n)
 {
     int i;
+    for(i=0;i<1000000000;i++);
     for(i = 0;i<n;i++)
     {
         if(key == arr[i])
@@ -29,6 +30,6 @@ int main()
     else
         printf("Key not found\n");
     end = time(NULL);
-    printf("\nTime taken to print sum is %.2f seconds\n",difftime(end, start));
+    printf("\nTime taken to print sum is %.7f seconds\n",difftime(end, start));
     return 0;
 }
