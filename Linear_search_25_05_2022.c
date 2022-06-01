@@ -29,7 +29,6 @@ int main()
     else
         printf("Key not found\n");
     end = time(NULL);
-    printf("Time taken to print sum is %.2f seconds",
-           difftime(end, start));
+    printf("\nTime taken to print sum is %.2f seconds\n",difftime(end, start));
     return 0;
 }
