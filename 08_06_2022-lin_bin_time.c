@@ -41,9 +41,9 @@ int main()
     printf("Enter the number of elements : ");
     scanf("%d",&n);
     for(j = 0;j<n;j++)
-        arr[j]=rand();
+        a[j]=rand();
     for(j = 0;j<n;j++)
-        printf("%d\t",arr[j]);
+        printf("%d\t",a[j]);
     printf("Enter a key : ");
     scanf("%d",&key);
     printf("\n1.Linear Search\n2.Binary Search\n3.Exit\nEnter a choice : ");
