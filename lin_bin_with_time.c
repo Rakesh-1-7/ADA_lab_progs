@@ -37,7 +37,7 @@ int main()
 {
 	clock_t s, e;
 	int arr[10], n;
-	int key, l = 5, pos;
+	int key, pos;
 	int choice;
 
 	printf("Enter the value of n : ");
@@ -54,7 +54,7 @@ int main()
 	{
 	case 1:
 		s = clock();
-		pos = lin_search(arr, key, l - 1);
+		pos = lin_search(arr, key, n - 1);
 		e = clock();
 		if (pos != -1)
 			printf("Element found at position %d.\n", pos + 1);
