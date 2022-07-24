@@ -1,9 +1,9 @@
 #include <stdio.h>
 int a[10][10], vis[10], n, Q[10] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
-
+int f = 0, r = 0, u;
 void bfs(int v)
 {
-    int f = 0, r = 0, u, i;
+    int  i;
     vis[v] = 1;
     Q[r] = v;
     printf("Start ");
