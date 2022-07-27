@@ -129,7 +129,9 @@ void printPermutation(int n)
 // Driver code
 int main()
 {
-    int n = 4;
+    int n;
+    printf("Enter the value of n : ");
+    scanf("%d", &n);
     printPermutation(n);
     return 0;
 }
