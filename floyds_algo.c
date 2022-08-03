@@ -26,7 +26,7 @@ void floyd (int graph[][n])
 
 void display(int dist[][n])
 {
-	printf ("DISTANCE MATRIX \n");
+	printf ("Distance matrix :\n");
 	for (int i = 0; i < n; i++)
 	{
 		for (int j = 0; j < n; j++)
