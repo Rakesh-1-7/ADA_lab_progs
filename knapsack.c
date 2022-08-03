@@ -17,6 +17,27 @@ int knap(int i,int j)
 	}
 	return(v[i][j]);
 }
+
+void objected_selected(int n, int m)
+{
+    int i = n;
+    int j = m;
+    while( i != 0 && j != 0)
+    {
+        if(v[i][j] != v[i-1][j])
+        {
+            x[i] = 1;
+        }
+        j = j - w[i];
+        i--;
+    }
+    printf("Object selected : ");
+    for(i = 1; i <= n; i++)
+    {
+        if(x[i] == 1)
+        printf("%d ", i);
+    }
+}
 void main() 
 {
 	int profit,count=0;
@@ -49,11 +70,9 @@ void main()
 		} else
 		   i--;
 	}
-	printf("Items included are\n");
-	printf("Sl.no\tweight\tprofit\n");
-	for (i=1;i<=n;i++)
-	  if(x[i])
-	   printf("%d\t%d\t%d\n",++count,w[i],p[i]);
+
+
 	printf("Total profit = %d\n",profit);
+    objected_selected(n,cap);
 	getch();
 }
