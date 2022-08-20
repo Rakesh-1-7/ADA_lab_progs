@@ -53,7 +53,6 @@ int prims()
 
     for (i = 1; i < n; i++)
     {
-
         distance[i] = cost[0][i];
         from[i] = 0;
         visited[i] = 0;
@@ -62,9 +61,7 @@ int prims()
     no_of_edges = n - 1;
 
     while (no_of_edges > 0)
-
     {
-
         min_distance = infinity;
         for (i = 1; i < n; i++)
             if (visited[i] == 0 && distance[i] < min_distance)
